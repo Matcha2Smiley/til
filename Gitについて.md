@@ -19,7 +19,7 @@ GitHubなどのリモートリポジトリに接続する際にはHTTPSとSSHの
 * -N
     * 新しくパスフレーズを作成
 * -f
-    *ファイルを指定
+    * ファイルを指定
 
 これで、SSH keyが完成
 
@@ -32,13 +32,13 @@ GitHubなどのリモートリポジトリに接続する際にはHTTPSとSSHの
 これで公開鍵をクリップボードにコピーしてくれる
 
 そしたら[GitHub](https://github.com/settings/keys)に行って
-```
+
 Setting > SSH and GPG Keys > New SSH key
-```
+
 * Title
     * 適当でok（どのPCかわかるようにするといいかも）
 * Key
-    *ここにさっきクリップボードにコピーしたssh keyをペースト
+    * ここにさっきクリップボードにコピーしたssh keyをペースト
 
 できたら"Add SSH key"をクリックして完了
 
@@ -65,7 +65,7 @@ Host github-sub
 
 ```
 
-下記の二つだけ固定であとはお好み
+下記の二つだけ固定であとは適宜やって下さい
 
 ```
 HostName github.com
