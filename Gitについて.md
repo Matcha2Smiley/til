@@ -113,16 +113,21 @@ Hi [@User名]! You've successfully authenticated, but GitHub does not provide sh
 ```
 [ブランチとは](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
 
-・リポジトリ作成
+・ローカルディレクトリを作成(ある場合は飛ばしてください)
 ```
-% git init til
+mkdir {ディレクトリ名}
+```
+
+・作成したディレクトリに移動してから以下を実行
+```
+% git init
 ```
 
 #### 3.リモートリポジトリと対話する準備
 
-・リポジトリに移動
+・originにリモートリポジトリを紐付け
 ```
-% git remote add origin git@github:USERNAME/til.git
+% git remote add origin {githubのリモートリポジトリのssh接続先}
 ```
 
 ここで'git@'の後に指定している'github'はsshの設定の時にconfigで設定したHost名
@@ -130,6 +135,9 @@ Hi [@User名]! You've successfully authenticated, but GitHub does not provide sh
 ```
 % git remote add origin git@github-sub:USERNAME/til.git
 ```
+
+"git@github-sub:USERNAME/til.git"の部分はgithubのリモートリポジトリのssh接続先で読み替えてください
+
 これでリモートリポジトリとの対話はできるようになった
 
 #### 4.ようやくpushをする
